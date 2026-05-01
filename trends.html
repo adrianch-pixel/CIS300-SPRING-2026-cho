@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vane — Trends</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-box">VANE</div>
+      <div class="site-brand">
+        <span class="brand-name">Vane</span>
+        <span class="brand-tagline">What's trending right now</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Top</a>
+      <a href="people.html">People</a>
+      <a href="trends.html" class="active">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-search">
+      <label for="search" style="display:none;">Search</label>
+      <input type="text" id="search" placeholder="Search" aria-label="Search" />
+      <button aria-label="Submit search">&#128269;</button>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1 class="page-banner-title">Trends</h1>
+    <p class="page-banner-sub">What's gaining momentum, what's fading out, and what's coming next.</p>
+  </div>
+
+  <div class="page-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Navigate</h3>
+        <ul class="sidebar-list">
+          <li><a href="trends.html">• Top Trends</a></li>
+          <li><a href="people.html">• People</a></li>
+          <li><a href="food.html">• Food</a></li>
+          <li><a href="music.html">• Music</a></li>
+          <li><a href="contact.html">• Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Trending Now</h3>
+        <ul class="sidebar-list">
+          <li><a href="#">• Hyperfueling</a></li>
+          <li><a href="#">• Wisdom Flexing</a></li>
+          <li><a href="#">• Weekly Episode Drops</a></li>
+          <li><a href="#">• Short-Form Goes Cinematic</a></li>
+          <li><a href="#">• 2016 Nostalgia</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <section>
+        <h2 class="section-heading">Trend of the Month — The New Yuppie Era</h2>
+        <div class="featured-body">
+          <img class="featured-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&q=70" alt="Coffee and energy drinks representing hyperfueling trend" />
+          <div class="featured-text">
+            <span class="card-tag-inline">Big Shift</span>
+            <p class="featured-name">Hyperfueling: Supersizing Our Stimulants</p>
+            <p>As drinking culture sobers up, people are finding new ways to get their kick. Coffee buckets, energy lattes, protein everything — we're supersizing our stimulants instead. Paired with a creeping obsession with '80s aesthetics, it's starting to look like a new Yuppie era is forming right under our noses.</p>
+            <p>The question isn't whether hyperfueling is a trend — it clearly is. The question is what it says about where we're all at mentally heading into the back half of the decade.</p>
+            <a href="#" class="btn">Read Full Story &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:1.2rem;">
+        <h2 class="section-heading">What's Moving Right Now</h2>
+        <div class="cards-grid">
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&q=70" alt="Streaming and TV watching" />
+            <div class="card-body">
+              <span class="card-tag-inline">Media</span>
+              <h3 class="card-title">Weekly Episodes Are Back — and People Are Obsessed</h3>
+              <p class="card-excerpt">The full-season binge is getting old. Audiences are rediscovering the thrill of waiting a whole week for the next episode, and the intense online discussion that comes with it.</p>
+              <a href="#" class="card-link" aria-label="Read more about weekly episode drops trend">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=70" alt="Nostalgic aesthetic representing 2016 nostalgia" />
+            <div class="card-body">
+              <span class="card-tag-inline">Nostalgia</span>
+              <h3 class="card-title">Why Everyone Is Obsessed With 2016 Right Now</h3>
+              <p class="card-excerpt">2016 is turning ten, and the internet is in full throwback mode. Vintage Instagram filters, chokers, and early influencer culture — the decade marker is hitting different in 2026.</p>
+              <a href="#" class="card-link" aria-label="Read more about 2016 nostalgia trend">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&q=70" alt="Short form video content creation" />
+            <div class="card-body">
+              <span class="card-tag-inline">Content</span>
+              <h3 class="card-title">Short-Form Video Is Going Cinematic</h3>
+              <p class="card-excerpt">Major studios are starting to treat vertical video as a real creative format — not just a marketing afterthought. Long-form cinematic short content is becoming a legitimate creative pipeline.</p>
+              <a href="#" class="card-link" aria-label="Read more about cinematic short form video trend">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&q=70" alt="Fashion and style evolution" />
+            <div class="card-body">
+              <span class="card-tag-inline">Style</span>
+              <h3 class="card-title">Quiet Luxury Is Fading. What's Taking Its Place?</h3>
+              <p class="card-excerpt">The understated, logo-free aesthetic that dominated the last few years is making way for something louder and more expressive. The aesthetic pendulum is swinging — hard — and it's not stopping anytime soon.</p>
+              <a href="#" class="card-link" aria-label="Read more about quiet luxury fading trend">Read More &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="newsletter">
+      <h3 class="sidebar-heading">Monthly Newsletter</h3>
+      <div class="newsletter-grid">
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=200&q=70" alt="People newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">People</p>
+            <p class="nl-subtitle">Rising Stars</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=200&q=70" alt="Trends newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Trends</p>
+            <p class="nl-subtitle">Viral Ideas</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=70" alt="Food newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Food</p>
+            <p class="nl-subtitle">Hot Eats</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&q=70" alt="Music newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Music</p>
+            <p class="nl-subtitle">Chart Hits</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <div class="banner-image">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1100&q=70" alt="Trends banner" />
+  </div>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Copyright Vane 2026. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

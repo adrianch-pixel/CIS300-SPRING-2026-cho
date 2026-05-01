@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vane — Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-box">VANE</div>
+      <div class="site-brand">
+        <span class="brand-name">Vane</span>
+        <span class="brand-tagline">What's trending right now</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Top</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-search">
+      <label for="search" style="display:none;">Search</label>
+      <input type="text" id="search" placeholder="Search" aria-label="Search" />
+      <button aria-label="Submit search">&#128269;</button>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1 class="page-banner-title">Contact</h1>
+    <p class="page-banner-sub">Have a tip, question, or just want to reach out? We'd love to hear from you.</p>
+  </div>
+
+  <div class="page-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Navigate</h3>
+        <ul class="sidebar-list">
+          <li><a href="trends.html">• Top Trends</a></li>
+          <li><a href="people.html">• People</a></li>
+          <li><a href="food.html">• Food</a></li>
+          <li><a href="music.html">• Music</a></li>
+          <li><a href="contact.html">• Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Quick Links</h3>
+        <ul class="sidebar-list">
+          <li><a href="index.html">• Homepage</a></li>
+          <li><a href="people.html">• People</a></li>
+          <li><a href="trends.html">• Trends</a></li>
+          <li><a href="food.html">• Food</a></li>
+          <li><a href="music.html">• Music</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <section class="contact-section">
+        <h2 class="section-heading">Get in Touch</h2>
+
+        <form class="contact-form" action="#" method="post" onsubmit="handleSubmit(event)">
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="tip">Submit a Story Tip</option>
+              <option value="question">General Question</option>
+              <option value="advertising">Advertising Inquiry</option>
+              <option value="feedback">Site Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+
+        </form>
+
+        <div id="form-success" style="display:none; margin-top:1rem; padding:0.8rem; background:#e8f5e9; border:1px solid #a5d6a7; font-size:0.82rem; color:#2e7d32;">
+          &#10003; Your message has been sent! We'll get back to you soon.
+        </div>
+      </section>
+
+      <section class="contact-section" style="margin-top:1.5rem;">
+        <h2 class="section-heading">Other Ways to Reach Us</h2>
+        <div class="contact-info">
+          <p>&#128231; <strong>Email:</strong> hello@vane.com</p>
+          <p>&#128241; <strong>Instagram:</strong> @vane.mag</p>
+          <p>&#128248; <strong>TikTok:</strong> @vanemag</p>
+          <p style="margin-top:0.6rem;font-size:0.8rem;color:var(--mid-gray);">We try to respond to all messages within 2–3 business days.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="newsletter">
+      <h3 class="sidebar-heading">Monthly Newsletter</h3>
+      <div class="newsletter-grid">
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=200&q=70" alt="People newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">People</p>
+            <p class="nl-subtitle">Rising Stars</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=200&q=70" alt="Trends newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Trends</p>
+            <p class="nl-subtitle">Viral Ideas</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=70" alt="Food newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Food</p>
+            <p class="nl-subtitle">Hot Eats</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&q=70" alt="Music newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Music</p>
+            <p class="nl-subtitle">Chart Hits</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Copyright Vane 2026. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.querySelector('.contact-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

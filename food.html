@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vane — Food</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-box">VANE</div>
+      <div class="site-brand">
+        <span class="brand-name">Vane</span>
+        <span class="brand-tagline">What's trending right now</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Top</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html" class="active">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-search">
+      <label for="search" style="display:none;">Search</label>
+      <input type="text" id="search" placeholder="Search" aria-label="Search" />
+      <button aria-label="Submit search">&#128269;</button>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1 class="page-banner-title">Food</h1>
+    <p class="page-banner-sub">The dishes, restaurants, and food culture worth knowing about right now.</p>
+  </div>
+
+  <div class="page-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Navigate</h3>
+        <ul class="sidebar-list">
+          <li><a href="trends.html">• Top Trends</a></li>
+          <li><a href="people.html">• People</a></li>
+          <li><a href="food.html">• Food</a></li>
+          <li><a href="music.html">• Music</a></li>
+          <li><a href="contact.html">• Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Hot Right Now</h3>
+        <ul class="sidebar-list">
+          <li><a href="#">• Tteokbokki Everywhere</a></li>
+          <li><a href="#">• Swicy Flavors</a></li>
+          <li><a href="#">• Fibermaxxing</a></li>
+          <li><a href="#">• Haitian Cuisine Rising</a></li>
+          <li><a href="#">• Beef Tallow Is Back</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <section>
+        <h2 class="section-heading">Featured — Tteokbokki Has Gone Global</h2>
+        <div class="featured-body">
+          <img class="featured-img" src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=300&q=70" alt="Korean street food tteokbokki" />
+          <div class="featured-text">
+            <span class="card-tag-inline">Global Eats</span>
+            <p class="featured-name">Korean Street Food's Biggest Export Is Finally Here</p>
+            <p>Tteokbokki — dense, chewy rice cakes in a spicy-sweet sauce — has surged on social media and is now showing up in grocery stores, cookbooks, and restaurants far outside Korea. The dish got a massive boost from BTS singer Jimin posting about his love of it, sending searches through the roof.</p>
+            <p>From sticky chili-honey glazed versions to fusion twists, tteokbokki is the food world's crossover moment of 2026. If you haven't tried it yet, that's about to change.</p>
+            <a href="#" class="btn">Read Full Story &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:1.2rem;">
+        <h2 class="section-heading">What's On Everyone's Plate</h2>
+        <div class="cards-grid">
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=70" alt="Spicy sweet food combination" />
+            <div class="card-body">
+              <span class="card-tag-inline">Flavor</span>
+              <h3 class="card-title">Swicy Is Everywhere and It's Not Slowing Down</h3>
+              <p class="card-excerpt">Sweet and spicy — or "swicy" — has become one of the most dominant flavor trends going. Hot honey, gochujang-maple, chili-lime — the combination is taking over menus and grocery shelves alike.</p>
+              <a href="#" class="card-link" aria-label="Read more about the swicy food trend">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=70" alt="High fiber healthy foods" />
+            <div class="card-body">
+              <span class="card-tag-inline">Wellness</span>
+              <h3 class="card-title">Fibermaxxing: The Gut Health Trend Taking Over TikTok</h3>
+              <p class="card-excerpt">Forget protein — fiber is the macro of 2026. TikTok's "fibermaxxing" trend has people loading up on legumes, whole grains, and fermented foods. Brands are rushing to add fiber to everything from pasta to crackers.</p>
+              <a href="#" class="card-link" aria-label="Read more about fibermaxxing trend">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=70" alt="Haitian food and culture" />
+            <div class="card-body">
+              <span class="card-tag-inline">Global</span>
+              <h3 class="card-title">Haitian Cuisine Is Having Its Moment</h3>
+              <p class="card-excerpt">Pikliz, griot, diri djon djon — Haitian food is finally breaking into the mainstream. New restaurants in Boston, Houston, and New Orleans are introducing dishes that have been underrepresented in American food culture for far too long.</p>
+              <a href="#" class="card-link" aria-label="Read more about Haitian cuisine rising">Read More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&q=70" alt="Trending food ingredients" />
+            <div class="card-body">
+              <span class="card-tag-inline">Ingredient</span>
+              <h3 class="card-title">Beef Tallow Is Making a Comeback</h3>
+              <p class="card-excerpt">Once a staple of old-school cooking, beef tallow is being rediscovered by a new generation valuing ancestral ingredients. It's having a viral moment on social media — prized for its high smoke point and rich flavor.</p>
+              <a href="#" class="card-link" aria-label="Read more about beef tallow comeback">Read More &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="newsletter">
+      <h3 class="sidebar-heading">Monthly Newsletter</h3>
+      <div class="newsletter-grid">
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=200&q=70" alt="People newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">People</p>
+            <p class="nl-subtitle">Rising Stars</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=200&q=70" alt="Trends newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Trends</p>
+            <p class="nl-subtitle">Viral Ideas</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=70" alt="Food newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Food</p>
+            <p class="nl-subtitle">Hot Eats</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&q=70" alt="Music newsletter" />
+          <div class="nl-card-body">
+            <p class="nl-category">Music</p>
+            <p class="nl-subtitle">Chart Hits</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <div class="banner-image">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1100&q=70" alt="Food culture banner" />
+  </div>
+
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Copyright Vane 2026. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

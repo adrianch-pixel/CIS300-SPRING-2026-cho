@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vane — What's Trending Right Now</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-box">VANE</div>
+      <div class="site-brand">
+        <span class="brand-name">Vane</span>
+        <span class="brand-tagline">What's trending right now</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="active">Top</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-search">
+      <label for="search" style="display:none;">Search</label>
+      <input type="text" id="search" placeholder="Search" aria-label="Search" />
+      <button aria-label="Submit search">&#128269;</button>
+    </div>
+  </header>
+
+  <!-- 3-COLUMN LAYOUT -->
+  <div class="page-wrapper">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Navigate</h3>
+        <ul class="sidebar-list">
+          <li><a href="trends.html">• Top Trends</a></li>
+          <li><a href="people.html">• People</a></li>
+          <li><a href="food.html">• Food</a></li>
+          <li><a href="music.html">• Music</a></li>
+          <li><a href="contact.html">• Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h3 class="sidebar-heading">Social</h3>
+        <img class="social-img" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&q=70" alt="Social media feed preview" />
+        <div class="social-controls">
+          <button class="social-play" aria-label="Play">&#9654;</button>
+          <div class="social-bar"></div>
+          <button class="social-vol" aria-label="Volume">&#128266;</button>
+        </div>
+        <a href="#" class="social-share-link">Share &amp; Links</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <section class="top-story">
+        <h2 class="section-heading">Top Story — Sports Is the New Fashion Week</h2>
+        <div class="top-story-body">
+          <img class="story-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&q=70" alt="Stylish sneakers representing the sports fashion trend" />
+          <div class="story-text">
+            <p>Tennis courts, basketball arenas, and football sidelines have officially replaced runways as the hottest stages in fashion. Last year, the US Open generated nearly 700% more online coverage than New York Fashion Week — and that gap is only growing in 2026.</p>
+            <p>From courtside fits to tunnel walk looks going viral before tip-off, athletes are now the most influential people in style. Brands are moving their budgets from front-row seats to locker room deals — and the results are reshaping what culture looks like.</p>
+          </div>
+        </div>
+        <div class="story-buttons">
+          <a href="trends.html" class="btn">Read More</a>
+          <a href="#" class="btn btn--outline">View Source</a>
+        </div>
+      </section>
+
+      <section style="margin-top:1.2rem;">
+        <h2 class="section-heading">About Vane</h2>
+        <p style="font-size:0.82rem;color:#333;line-height:1.65;">
+          My website, Vane, is intended to be a culture and trends magazine site. The name comes from a weather vane — an instrument that shows which direction the wind is blowing — which felt fitting for a site focused on tracking where culture is headed. The website covers four main areas: People, Trends, Food, and Music. Each page features stories and coverage on what's happening right now across those spaces.
+        </p>
+      </section>
+    </main>
+
+    <!-- RIGHT SIDEBAR — Newsletter -->
+    <aside class="newsletter">
+      <h3 class="sidebar-heading">Monthly Newsletter</h3>
+      <div class="newsletter-grid">
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=200&q=70" alt="People section" />
+          <div class="nl-card-body">
+            <p class="nl-category">People</p>
+            <p class="nl-subtitle">Rising Stars</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=200&q=70" alt="Trends section" />
+          <div class="nl-card-body">
+            <p class="nl-category">Trends</p>
+            <p class="nl-subtitle">Viral Ideas</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=70" alt="Food section" />
+          <div class="nl-card-body">
+            <p class="nl-category">Food</p>
+            <p class="nl-subtitle">Hot Eats</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+        <div class="newsletter-card">
+          <img class="nl-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&q=70" alt="Music section" />
+          <div class="nl-card-body">
+            <p class="nl-category">Music</p>
+            <p class="nl-subtitle">Chart Hits</p>
+            <p class="nl-issue">Vol. 1, Issue 1</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- BANNER IMAGE -->
+  <div class="banner-image">
+    <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=1100&q=70" alt="Culture and trends banner" />
+  </div>
+
+  <!-- USER REVIEWS -->
+  <section class="reviews">
+    <h3 class="reviews-heading">User Reviews</h3>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-author">Jordan M.</p>
+        <p class="review-text">"Finally a site that actually keeps up with what's happening. I check Vane every morning before anything else."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-author">Taylor K.</p>
+        <p class="review-text">"The food section introduced me to tteokbokki and now I'm obsessed. Great coverage of stuff I wouldn't have found anywhere else."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <p class="review-author">Alex R.</p>
+        <p class="review-text">"Solid site with real content. The trends page is especially good — it actually explains why things are happening, not just that they are."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="people.html">People</a>
+      <a href="trends.html">Trends</a>
+      <a href="food.html">Food</a>
+      <a href="music.html">Music</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Copyright Vane 2026. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
